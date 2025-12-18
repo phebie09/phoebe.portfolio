@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Phoebe Margaret Mago</title>
+
+   <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Photos/Pheb.jpg" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    body {
+      background-color: #86bde7;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* ================= NAVBAR ================= */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f3cfcf;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .navbar .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .navbar ul li a {
+      font-weight: 500;
+      text-decoration: none;
+      padding-bottom: 0.2rem;
+      transition: color 0.3s, border-bottom 0.3s;
+      color: #333;
+    }
+
+    .navbar ul li a.active {
+      color: #0077b6;
+      border-bottom: 2px solid #0077b6;
+    }
+
+    .navbar ul li a:hover {
+      color: #005f8a;
+    }
+
+    /* ================= SECTIONS ================= */
+    .section {
+      max-width: 1100px;
+      margin: 4rem auto;
+      background: #fff;
+      padding: 3rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: #0077b6;
+    }
+
+    .section p {
+      margin-bottom: 1.2rem;
+      color: #555;
+      font-size: 1.05rem;
+    }
+
+    /* ================= HOBBIES ================= */
+    .hobbies-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .hobby-card {
+      background: #fafafa;
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+
+    /* Square image container */
+    .hobby-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 14px;
+      background-color: #eaeaea;
+      margin-bottom: 1rem;
+    }
+
+    .hobby-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .hobby-card:hover .hobby-image img {
+      transform: scale(1.08);
+    }
+
+    .hobby-card p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #444;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+
+    /* ================= ANIMATIONS ================= */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .navbar ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .section {
+        margin: 2rem 1rem;
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <h1 class="logo">Phoebe Mago</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+      I was born on <strong>January 9, 2004</strong>. Some of my hobbies include
+      playing the bass guitar and occasionally singing. I am also part of our
+      church worship ministry and participate in street preaching missions
+      within Daet and in other provinces.
+    </p>
+
+    <p>
+      I enjoy reading various types of books—both educational and fiction. I
+      spent my high school years at <strong>Vinzons Pilot High School</strong> and
+      <strong>Our Lady of Lourdes College Foundation</strong>.
+    </p>
+
+    <h3 style="margin-top:3rem; color:#0077b6; font-size:1.6rem;">
+      Hobbies Gallery
+    </h3>
+
+    <div class="hobbies-container">
+      <div class="hobby-card">
+        <div class="hobby-image">
+          <img src="Photos\Playing Bass.jpg" alt="Playing Bass Guitar">
+        </div>
+        <p>Bass Guitar</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-image">
+          <img src="Photos\Street Preaching.jpg" alt="Street Preaching">
+        </div>
+        <p>Reading Books</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-image">
+          <img src="Photos\Multimedia.jpg" alt="Multimedia Ministry">
+        </div>
+        <p>Worship Ministry</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Phoebe Margaret Mago
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Phoebe Margaret Mago</title>
+  <link rel="stylesheet" href="style.css" />
+
+   <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Photos/Pheb.jpg" />
+  <style>
+    /* Basic reset and font */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+    body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+    
+    /* Navbar */
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .navbar .logo { font-size: 1.5rem; font-weight: 700; color: #222; }
+    .navbar ul { list-style: none; display: flex; gap: 1.5rem; }
+    .navbar ul li a { color: #333; font-weight: 500; transition: color 0.3s; }
+    .navbar ul li a.active, .navbar ul li a:hover { color: #0077b6; }
+
+    /* Hero Section */
+    .hero { display: flex; justify-content: center; align-items: center; text-align: center; padding: 5rem 2rem; background-color: #ffffff; }
+    .hero-content { max-width: 700px; }
+    .hero-content .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; }
+    .hero-content h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero-content h1 .highlight { color: #0077b6; }
+    .hero-content h2 { font-size: 1.5rem; font-weight: 400; margin-bottom: 1rem; color: #555; }
+    .hero-content p.intro { font-size: 1rem; margin-bottom: 2rem; color: #555; }
+
+    /* Button */
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; background-color: #0077b6; color: #fff; border-radius: 5px; transition: background-color 0.3s; text-decoration: none; font-weight: 500; }
+    .btn:hover { background-color: #005f8a; }
+
+    /* Footer */
+    footer { text-align: center; padding: 2rem 0; font-size: 0.9rem; color: #777; border-top: 1px solid #e0e0e0; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Phoebe Mago</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <img src="Photos\Pheb.jpg" alt="Phoebe Margaret Mago" class="profile-img" />
+      <h1>Hello, I am <span class="highlight">Phoebe Margaret Mago</span></h1>
+      <h2>Aspiring Web Developer & UI/UX Designer</h2>
+      <p class="intro">
+        I am a detail-oriented and curious individual, passionate about front-end development and user experience design. Explore my portfolio to learn more about my skills and projects.
+      </p>
+      <a href="projects.html" class="btn">View Projects</a>
+    </div>
+  </header>
+
+  <footer>
+    © 2025 Phoebe Margaret Mago
+  </footer>
+</body>
+</html>
